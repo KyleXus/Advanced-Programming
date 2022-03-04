@@ -1,0 +1,23 @@
+<html>
+<head>
+  <title>california house</title>
+</head>
+<body>
+ 
+    <h1>california house test</h1>
+    {% for row in rows_deploy %}
+    <p>test: 
+       <b>{{row["longitude"]}}</b> | 
+       {{row["latitude"]}} | 
+        {{ row["housing_median_age"]}} | 
+       {{row['total_rooms']}}	| 
+       {{row["households"]}} |
+        {{ row["median_income"]}} |
+       {{row['median_house_value']}}	
+    </p>
+    {% endfor %}
+
+
+   
+</body>
+</html>

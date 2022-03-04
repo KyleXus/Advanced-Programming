@@ -1,0 +1,21 @@
+<html>
+<head>
+  <title>Status Information</title>
+</head>
+<body>
+
+ <h1>california house train</h1>
+    {% for row in rows_status %}
+    <p>train: 
+        <b>{{row["Tlongitude"]}}</b> | 
+       {{row["latitude"]}} | 
+        {{ row["total_bedrooms"]}} | 
+       {{row['population']}}	| 
+       {{row["test_id"]}} 
+    </p>
+    {% endfor %}
+
+
+   
+</body>
+</html>
